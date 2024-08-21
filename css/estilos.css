@@ -1,0 +1,400 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: fantasy, Arial, Helvetica, sans-serif;
+} /*--uso de display-grid--*/
+body{
+    min-height: 100vh;
+    display: grid;
+    margin:0;
+    grid-template-rows: 120px 100px 1fr 150px;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    "header"
+    "aside"
+    "main"
+    "footer";
+}
+header{
+    grid-area: header;
+}
+aside{
+    grid-area: aside;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+/*
+*/
+/*                                                
+    ESTILOS INDEX                             
+*/
+/*
+*/                                                               
+header{
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(158, 201, 239);
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    margin: 40px;
+
+}
+
+/* barra de navegacion header*/
+
+.nave{
+    list-style-type: none;
+    align-self: self-end;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 80px;
+    gap: 20px   
+}
+
+.enlace {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    list-style-type: none;
+    list-style: none;
+}  
+  
+.enlace:hover{
+    background-color: white;
+    color: black;
+}
+aside{
+    margin: 0;   
+    background-color: rgb(251, 1, 1);   
+}
+.servicio{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+.sub{
+
+    text-align: center;
+    padding: 2px;
+}
+main{
+    
+    background-color:rgb(226, 231, 236);
+    
+} 
+
+#caja1{
+    position:relative;
+    width: auto;
+    height: 600px;
+    
+}
+#caja2{
+    position: absolute;
+    top: 150px;
+    left: 250px;
+    width: 400px;
+    height: 60px;
+    
+}
+
+.sub{
+    color: black;
+    text-align:center;
+    font-size: 20px;
+    padding: 2px;
+    margin-top: 10px;
+}   
+
+.fondo{
+    width: 100%;
+    padding: 5px;
+    margin:0;
+    margin-top: 20px;
+
+}
+ 
+.p2{
+    font-size: 150px;
+    padding:25px;
+    border-top: 50px;
+    font-style: italic;
+    text-transform:uppercase;
+    line-height: 30px;
+    color:rgb(251, 1, 1);
+    flex-wrap: wrap;
+    
+
+}  
+.p{
+    
+    top: 30px;
+    left: 30px;  
+}
+
+
+footer{
+    background-color:rgb(158, 201, 239);
+    margin:0; 
+    flex-wrap: wrap; 
+    font-size: 15px;
+}
+.cajita{
+    width: 25px;
+    height: 25px;
+}
+.red-social{
+    margin-top: 20px;
+    text-align: center;
+    float: left;
+    width: 35%;
+    height: 50px;
+    
+}
+.acceso{
+    text-align: center;
+    float: left;
+    width: 32%;
+    height: 50px;
+    margin-left: 190px;
+    margin-top: 20px;
+    
+}
+.aviso{
+    margin-top: 20px;
+    text-align: center;
+    float: left;
+    width: 32%;
+    height: 100px;
+     
+}
+.direccion{
+    margin-top: 20px;
+    text-align: center;
+    float: left;
+    width: 32%;
+    height: 120px;
+    
+}
+.acceso:hover{
+    background-color: white;
+    color: black;
+}
+
+
+/*
+*/
+/*
+    ESTILOS PRODUCTOS
+/*
+/*
+*/
+
+.galeria{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px 200px 200px ;
+    grid-gap: 1rem;
+    margin-top: 150px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5% 0;
+    background-color:rgb(226, 231, 236);
+    
+}
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+   
+}
+.texto{
+    text-align: center;
+    margin: 30px;
+    text-transform: uppercase;
+}
+
+/*
+*/
+/*
+    ESTILOS PRESUPUESTO
+/*
+/*
+*/
+
+.container{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5% 0;
+    border:1px solid black;
+}
+.container *{
+    box-sizing: border-box;
+}
+
+.informe{
+    color: black;
+    text-align: center;
+}
+.deseo{
+    color: black;
+    text-align: center;
+}
+.lista-principal{
+    list-style-type:none;
+    padding: 0;
+
+}
+.lista-principal{
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+.lista-principal li{
+    display: flex;
+    flex-wrap: wrap;
+    border: 0;
+}
+.lista-principal > li:not(:last-child){
+    margin-bottom: 20px;
+}
+.lista-principal li label{
+    padding: 8px;
+    font-weight: 300;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+}
+.lista-principal >li >label{
+    flex: 1 0 120px;
+    max-width: 220px;
+}
+.lista-principal > li >label + *{
+    flex: 1 0 220px;
+    
+}
+
+.lista-principal li, .lista-principal li textarea{
+    padding: 15px;
+    border: 0;
+}
+.mensaje li{
+    flex: 1 0 120px;
+    max-width: 220px;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.lista-principal .boton button{
+    margin-left: auto;
+    padding: 8px 18px;
+    border: 0px;
+    background-color:black;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.90em;
+    border-radius:0;
+    
+}
+.lista-principal .boton{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+/*
+*/
+/*
+    ESTILOS CONTACTO
+/*
+/*
+*/
+
+section{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5% 0;
+    border:0;
+}
+section article{
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+}
+article{
+    text-align: center;
+    padding: 20px;
+    margin: 3px;
+}
+
+.titulo{
+    margin-top: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+.info{
+   
+    text-align: center;
+    margin:auto;
+    padding: auto;
+}
+.mapa{
+
+    width: 500px;
+    height: 500px;
+    margin-left: 28%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    border: 1px solid black;
+}
+
+/* PANTALLA tablet*/
+@media ( max-width: 991px){
+    header, aside, main,footer{
+        width: 100%;
+    }
+   
+    .p2{
+        align-items: center;
+        font-size: 80px;
+    } 
+    main{
+        width: 45%;
+
+    }   
+}    
+
+/* PANTALLA movil*/
+@media ( max-width: 580px){
+    header, aside, main,footer{
+        width: 100%;
+    }
+    main{
+        width: 45%;
+    }
+    .p2{
+        font-size: 50px;
+        align-items: center;
+    }
+}
+
