@@ -373,11 +373,7 @@ article{
     header, aside, main,footer{
         width: 100%;
     }
-   
-    .p2{
-        align-items: center;
-        font-size: 80px;
-    } 
+
     main{
         width: 45%;
 
@@ -391,10 +387,6 @@ article{
     }
     main{
         width: 45%;
-    }
-    .p2{
-        font-size: 50px;
-        align-items: center;
     }
 }
 
