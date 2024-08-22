@@ -31,51 +31,48 @@
         <h1 class="texto"><strong> Servicio de Informacion </strong></h1>
     </aside>
     <!--use una lista desordenada para el formulario-->
-    <main>
-        <section>
-            <div class="container">
-                <h2 class="informe"> Datos Personales </h2>
-                <p class="deseo">Si desea mas informacion, haznos todas sus preguntas, estaremos encantados de responderles.</p><br>
-                <form id="myForm" name="myForm" action="#" method="post">
-                    <ul class="lista-principal">
-                        <li>
-                            <label for="nombre"> Nombre:</label>
-                            <input type="text" name="nombre" id="nombre" placeholder="Escriba su nombre" pattern="[A-Z a-z]{3,15}"
-                                title="Escriba solo letras entre 3 y 15 caracteres" required>
-                        </li>
-                        <li>
-                            <label for="apellidos"> Apellidos:</label>
-                            <input type="text" name="apellidos" id="apellidos" placeholder="Escriba sus apellidos" pattern="[A-Z a-z]{3,40}"
-                                title="Escriba solo letras entre 4 y 40 caracteres" required>
-                        </li>
-                        <li>
-                            <label for="email"> Correo Electronico:</label>
-                            <input type="email" name="email" id="email" placeholder="Escriba su correo electronico" pattern="[a-zA-Z0-9_-.]+@[a-z0-9._-]+/.[a-z]{2,4}"
-                                title="Escriba su correo electronico" required>
-                        </li>
-                        <li>
-                            <label for="telefono"> Teléfono:</label>
-                            <input type="tel" name="telefono" id="telefono" placeholder="Escriba su numero telefonico" pattern="[0-9]{9}" 
-                                title="Escriba su numero telefonico">
-                        </li>
-                        <li>
-                            <label for="mensaje">Mensaje:</label>
-                            <textarea rows="6" id="mensaje" placeholder="Escriba aqui su mensaje"></textarea>
-                        </li>
-                        <li>
-                            <input type="checkbox" name= "aceptar politicas de privacidad" value="si" id="aceptar">
-                            <p class="mensaje"> Antes de enviar, debera aceptar "las politicas de privacidad" de la empresa.</p>
-                        </li>
-                        <li class="boton">
-                            <button type="reset"> Borrar</button>
-                            <button type="submit">Enviar</button>
-                        </li>
-                    </ul>  
-                </form>    
-            </div>
-        </section>    
-    </main>  
-
+    <section>
+        <div class="container">
+            <h2 class="informe"> Datos Personales </h2>
+            <p class="deseo">Si desea mas informacion, haznos todas sus preguntas, estaremos encantados de responderles.</p><br>
+            <form id="myForm" name="myForm" action="#" method="post">
+                <ul class="lista-principal">
+                    <li>
+                        <label for="nombre"> Nombre:</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Escriba su nombre" pattern="[A-Z a-z]{3,15}"
+                            title="Escriba solo letras entre 3 y 15 caracteres" required>
+                    </li>
+                    <li>
+                        <label for="apellidos"> Apellidos:</label>
+                        <input type="text" name="apellidos" id="apellidos" placeholder="Escriba sus apellidos" pattern="[A-Z a-z]{3,40}"
+                            title="Escriba solo letras entre 4 y 40 caracteres" required>
+                    </li>
+                    <li>
+                        <label for="email"> Correo Electronico:</label>
+                        <input type="email" name="email" id="email" placeholder="Escriba su correo electronico" pattern="[a-zA-Z0-9_-.]+@[a-z0-9._-]+/.[a-z]{2,4}"
+                            title="Escriba su correo electronico" required>
+                    </li>
+                    <li>
+                        <label for="telefono"> Teléfono:</label>
+                        <input type="tel" name="telefono" id="telefono" placeholder="Escriba su numero telefonico" pattern="[0-9]{9}" 
+                            title="Escriba su numero telefonico">
+                    </li>
+                    <li>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea rows="6" id="mensaje" placeholder="Escriba aqui su mensaje"></textarea>
+                    </li>
+                    <li>
+                        <input type="checkbox" name= "aceptar politicas de privacidad" value="si" id="aceptar">
+                        <p class="mensaje"> Antes de enviar, debera aceptar "las politicas de privacidad" de la empresa.</p>
+                    </li>
+                    <li class="boton">
+                        <button type="reset"> Borrar</button>
+                        <button type="submit">Enviar</button>
+                    </li>
+                </ul>  
+            </form>    
+        </div>
+    </section>    
     <footer>
         <div class="red-social">
             <div>
